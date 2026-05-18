@@ -124,8 +124,10 @@ function renderProductsTable() {
           </button>
         </td>
         <td class="text-end">
-          <button class="btn btn-sm btn-outline-light me-1" onclick="editProduct(${product.id})">Editar</button>
-          <button class="btn btn-sm btn-outline-danger" onclick="deleteProduct(${product.id})">Eliminar</button>
+          <div class="product-actions">
+            <button class="btn btn-sm btn-outline-light" onclick="editProduct(${product.id})">Editar</button>
+            <button class="btn btn-sm btn-outline-danger" onclick="deleteProduct(${product.id})">Eliminar</button>
+          </div>
         </td>
       </tr>
     `;
